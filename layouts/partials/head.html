@@ -27,6 +27,11 @@
 
 <!-- metadata -->
 
+<!-- Social Share -->
+<link href="dist/css/share.min.css">
+<script src="dist/js/share.min.js"></script>
+
+
 {{ if .Site.GoogleAnalytics }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
@@ -116,5 +121,9 @@ $(
 {{ if .Site.Params.disqusShortname }}
 <script src="https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js"></script>
 {{ end }}
+
+<!-- Edited by Kevin 20200321
+Loading mathjax -->
+{{ partial "mathjax.html" .}}
 
 </head>

@@ -60,6 +60,7 @@
                     </div>
                 </div>
             </div>
+
             
             <div class="post-body-wrapper">
                 {{ if .Params.enableVue }}
@@ -74,8 +75,17 @@
                     {{ end }}
                 </div>
             </div>
+
+            <div id="share-1" class="social-share" datasites="weibo, qq, qzone"></div>
+
+            <script src="dist/src/js/social-share.js"></script>
+            <script src="dist/src/js/qrcode.js"></script>
+            <script>
+                socialShare('#share-1');
+            </script>
             
             
+
             <nav class="post-pagination">
 
                 {{if .Next}}
@@ -98,6 +108,8 @@
                 </a>
                 {{end}}
             </nav>
+
+
             <div class="post-comment-wrapper">
                 {{ if eq .Params.comment false }}
                 <p style="opacity: 0.6" align="center">

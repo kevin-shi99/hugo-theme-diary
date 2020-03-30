@@ -3,9 +3,12 @@ $color-accent: #1976d2;
 $back-container-background: #fcfcfc;
 $front-container-background: #ffffff;
 
-$default-font-list: "Lora", "Noto Serif SC";
-$mono-font-list: "Fira Mono", "Cousine", Monaco, Menlo, "Source Code Pro",
-  monospace;
+$default-font-list: "Lora", "Noto Serif SC", serif;
+// $mono-font-list: "Fira Mono", "Cousine", Monaco, Menlo, "Source Code Pro",
+//   monospace;
+
+// Edited by Kevin Shi 20200315
+$mono-font-list:  "Monaco", "Fira Mono", "Consolas", "Cousine", "Source Code Pro", monospace, Medium;
 $sans-preferred-font-list: "Montserrat", "Roboto", "Source Sans Pro",
   "Helvetica", $default-font-list;
 
@@ -21,7 +24,8 @@ $nav-footer-size: 12px;
 $post-title-size: 30px;
 $post-subtitle-size: 14px;
 $post-summary-size: 16px;
-$post-body-size: 16px;
+// 2020.03.13 Edited by Kevin Shi to 18px, originally 16px
+$post-body-size: 18px; 
 $post-meta-size: 16px;
 $tag-category-title-size: 22px;
 $toc-size: 16px;
@@ -930,6 +934,24 @@ a {
       }
     }
 
+    div.-mob-share-ui-button {
+      display: flex;
+      width: 4em;
+      margin: 1em 2em;
+      padding: .25em .5em;
+      border: solid black 1px;
+      border-radius: .5em;
+    }
+
+    div.-mob-share-close {
+      display: flex;
+      width: 4em;
+      margin: 1em 2em;
+      padding: .25em .5em;
+      border: solid black 1px;
+      border-radius: .5em;
+    }
+
     .post-comment-wrapper {
       iframe {
         // Yay a dirty hack
@@ -1060,6 +1082,7 @@ a {
   color: $dark-accent;
 }
 
+<<<<<<< HEAD
 mjx-container
 {
   overflow-y: hidden !important;
@@ -1088,3 +1111,13 @@ mjx-container
 .vcontent p {
   color: black !important;
 }
+=======
+// Edited by Kevin 20200321
+code.has-jax {
+  font: inherit;
+  font-size: 100%;
+  background: inherit;
+  border: inherit;
+  color: #515151;
+}
+>>>>>>> 700bd2a... Kevin's customization
